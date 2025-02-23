@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+
+
+/* General Reset */
+.ActTrxcontainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* Smaller font for compact look */
+}
+
+/* Main Container */
+.ActTrxcontainer {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Header - Blue Bar */
+.ActTrxheader {
+    background-color: blue;
+    color: white;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Adjust form padding to move slightly left */
+.ActTrxform-container {
+    background-color: #E6F2FF; /* Light Blue Background */
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding-left: 25px; /* Shift form slightly to the left */
+}
+
+
+/* Form Labels */
+.ActTrxform-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px; /* Moves fields slightly left */
+}
+
+
+.ActTrxform-group label {
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 3px;
+}
+
+.ActTrxform-group input,
+.ActTrxform-group select {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+}
+
+/* Side Buttons */
+.ActTrxside-buttons {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ActTrxside-buttons button {
+    width: 100px;
+    padding: 9px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid gray;
+    cursor: pointer;
+    text-align: left;
+    font-size: 13px;
+}
+
+.ActTrxside-buttons button:active,
+.ActTrxside-buttons button:hover {
+    background-color: darkgray;
+}
+
+/* Highlighted Buttons */
+.ActTrxsave-btn {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.ActTrxcancel-btn {
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+}

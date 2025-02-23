@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DashboardPage.css">
+</head>
+<body>
+       <!-- Banking Dashboard -->
+    <div id="dashboardPage" class="dashboard-hidden">
+        <div class="dashboard-navbar">Banking Dashboard</div>
+
+        <div class="dashboard-container">
+            <!-- Existing Modules -->
+            <div class="dashboard-module" onclick="openModule('Client Maintenance')">
+                <div class="module-icon">👤</div>
+                <div class="module-title">Client Maintenance</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Account Management')">
+                <div class="module-icon">👥</div>
+                <div class="module-title">Account Management</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Loan Management')">
+                <div class="module-icon">💼</div>
+                <div class="module-title">Loan Management</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Transactions')">
+                <div class="module-icon">💳</div>
+                <div class="module-title">Transactions</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Loan Repayment')">
+                <div class="module-icon">💰</div>
+                <div class="module-title">Loan Repayment</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Reports')">
+                <div class="module-icon">📊</div>
+                <div class="module-title">Reports</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Customer Support')">
+                <div class="module-icon">💬</div>
+                <div class="module-title">Customer Support</div>
+            </div>
+
+            <div class="dashboard-module" onclick="openModule('Settings')">
+                <div class="module-icon">⚙️</div>
+                <div class="module-title">Settings</div>
+            </div>
+        </div>    
+
+
+        <!-- Smaller Logout Button at Top-Right -->
+        <div class="logout">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>    
+    
+    <script src="MyLogin.js"></script>
+</body>
+</html>

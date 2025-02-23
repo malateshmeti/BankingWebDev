@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>
+    
+    <div id="loginPage" class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="loginform-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="loginform-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            
+            <!-- Remember Me Checkbox -->
+            <div class="logincheckbox-group">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+
+            <!-- Login Button -->
+            <button type="submit">Login</button>
+
+            <p id="loginError" class="loginerror-message"></p>
+        </form>
+    </div>
+
+    <script src="MyLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Transaction</title>
+    <link rel="stylesheet" href="AccountTransaction.css">
+</head>
+<body>
+
+    <div id="AccountTransactionPage" class="ActTrxcontainer">
+        <!-- Header -->
+        <div class="ActTrxheader">Account Transaction</div>
+
+        <!-- Form Section -->
+        <div class="ActTrxform-container">
+            <div class="ActTrxform-group">
+                <label>Branch ID</label>
+                <input type="text" value="1001">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Deposit Date</label>
+                <input type="date" value="24/Jan/2024" >
+            </div>
+            <div class="ActTrxform-group">
+                <label>Transaction Type</label>
+                <input type="text">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Debit A/C Type</label>
+                <input type="text" value="General Ledger" disabled>
+            </div>
+            <div class="ActTrxform-group">
+                <label>Debit Account ID</label>
+                <input type="text">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Narration</label>
+                <input type="text">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Credit A/C Type</label>
+                <input type="text" value="General Ledger" disabled>
+            </div>
+            <div class="ActTrxform-group">
+                <label>Credit Account ID</label>
+                <input type="text">
+            </div>       
+            <div class="ActTrxform-group">
+                <label>Amount</label>
+                <input type="text">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Deposit Slip No</label>
+                <input type="text">
+            </div>
+            <div class="ActTrxform-group">
+                <label>Batch ID</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <!-- Side Buttons -->
+        <div class="ActTrxside-buttons">
+            <button>View</button>
+            <button>Add</button>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button class="ActTrxsave-btn">Save</button>
+            <button class="ActTrxcancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("popstate", function (event) {
+        console.log("Navigating back...");
+    });
+</script>   
+
+</body>
+</html>
